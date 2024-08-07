@@ -27,8 +27,4 @@ Regras para o Documento de Requisitos
      Consistência e Organização:
 
         Regra 3: Os requisitos devem ser organizados de forma consistente, seguindo uma estrutura padrão. Cada requisito deve incluir um identificador único, uma descrição detalhada, uma justificativa (quando aplicável), e critérios de aceitação.
-        Exemplo:
-        Identificador: RF01
-        Descrição: O sistema deve permitir que os administradores adicionem novos produtos ao catálogo.
-        Justificativa: Para garantir que o catálogo de produtos esteja sempre atualizado com as últimas novidades.
-        Critérios de Aceitação: Um administrador pode adicionar um novo produto preenchendo os campos obrigatórios (nome, preço, descrição, categoria, quantidade em estoque) e salvando as alterações. O novo produto deve aparecer no catálogo imediatamente após a adição.
+        
