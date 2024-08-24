@@ -1,0 +1,22 @@
+# Ignorar arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos e pastas gerados por compilação
+/node_modules/
+/dist/
+/build/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar chaves e senhas
+.env
+
+# Ignorar arquivos de IDEs
+*.vscode/
+.idea/
+
+# Ignorar arquivos específicos de backup ou temporários
+*.bak
+*.tmp
