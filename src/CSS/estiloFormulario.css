@@ -1,0 +1,69 @@
+/* estiloFormulario.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.containerFormulario {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz o contêiner ocupar a altura total da tela */
+    background-color: #f0f0f0; /* Cor de fundo da página */
+}
+
+.areaFormulario {
+    background-color: #6D165A;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px; /* Define um máximo para a largura do formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+.tituloFormulario {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campoFormulario {
+    margin-bottom: 20px;
+}
+
+.labelFormulario {
+    display: block; /* Faz com que o label ocupe toda a largura disponível */
+    color: #fff;
+    margin-bottom: 5px; /* Espaço entre o label e o input */
+}
+
+.campo_formulario {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total do elemento */
+}
+
+.areaAcao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.voltar {
+    background-color: #333;
+}
+
+.cadastrar {
+    background-color: #4CAF50;
+}

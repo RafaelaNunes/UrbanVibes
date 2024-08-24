@@ -1,0 +1,74 @@
+
+body{
+    background: #F2F0F4;
+  }
+  
+  /* ------------------------------------------ LOGIN -----------------------------------------*/
+
+.conteiner{
+  width: 1000px;
+  height: 650px;
+  background-color:#FFF;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius : 30px;
+  text-align: center;
+  display: flex;
+}
+
+
+#logoLogin{
+  width: 50%;
+  float: left;
+  margin-top: 130px;
+}
+
+#logoLogin img{
+ margin-top:0  auto;
+}
+
+
+#area{
+  width: 50%;
+  float: right;
+  background-color: #6D165A;
+  border-radius: 30px;
+  
+}
+
+
+
+.titulo {
+margin-top: 55px; 
+margin-bottom: 10px;
+color:  #ffffff;
+font-size: 30px;
+
+}
+
+.campoLogin{
+  height: 50px;
+  width: 300px;
+  font-size: 15px;
+  color: #003853;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  background: #F2F0F4;
+  text-indent: 25px;
+  border: none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+.botao_login {
+    color: rgb(0, 0, 0);
+    background:rgb(255, 255, 255);
+    border-radius: 15px;
+    padding:  5px 20px;
+    height: 35px;
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
