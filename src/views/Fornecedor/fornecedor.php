@@ -25,7 +25,7 @@ if(!empty($_GET['search'])){
 </head>
 <body>
 
-   <!-- ----------------------------- TOPO -------------------------------->
+   <!-- ----------------------------- Menu -------------------------------->
    <div class="menu"> 
     <div class="barra">
           
@@ -42,7 +42,7 @@ if(!empty($_GET['search'])){
   
 </div>
 
-  <!-- ----------------------------- TOPO -------------------------------->
+  <!-- ----------------------------- Conteudo -------------------------------->
   
 
   
@@ -76,7 +76,7 @@ if(!empty($_GET['search'])){
           
         <?php
         while ($user_fornecedor = mysqli_fetch_assoc($result)) {
-          $num_colunas=
+         
           $classe = ($user_fornecedor['idfornecedor'] % 2 == 0) ? 'linhaBranca' : 'linhaCinza';
          
               echo "<tr class='$classe'>";
