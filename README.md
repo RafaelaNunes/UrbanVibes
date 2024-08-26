@@ -25,3 +25,51 @@ Administrador: Gerencia todas as funcionalidades do sistema, incluindo a configu
 * Frontend: Html, CSS, JavaScript 
 * Backend: PHP
 * Banco de Dados:
+
+# Estrutura
+
+/Diagramas/
+|
+/Padrão Adotados/
+|
+/Requisitos/
+|
+/src/
+│
+├── /css/
+│   └── styles.css
+│
+├── /images/
+│   └── logo.png
+│
+├── /js/
+│   └── scripts.js
+│
+├── /includes/
+│   └── db_connection.php
+│   └── functions.php
+│
+├── /views/
+│   ├── /fornecedores/
+│   │   ├── fornecedores.php
+│   │   ├── add_fornecedor.php
+│   │   ├── edit_fornecedor.php
+├   |   |── script_edit_fornecedor.php
+│   │   └── delete_fornecedor.php
+│   │
+│   ├── /produtos/
+│   │   ├── list_produtos.php
+│   │   ├── add_produto.php
+│   │   ├── edit_produto.php
+|   |   |── sript_edit_produto.php
+│   │   └── delete_produto.php
+│   │
+│   └── /auth/
+│       ├── logar.php
+│       ├── login.html
+│       └── logout.php
+│
+
+│
+└── /config/
+    └── config.php
