@@ -1,6 +1,7 @@
 <?php
-include('../BancoDeDados/protect.php');
-include('../BancoDeDados/conexao.php');
+include('../../includes/protect.php');
+include('../../config/conexao.php');
+
 
 if(isset($_POST['cadastrar'])){
     $nome = $_POST['nome'];
@@ -28,7 +29,7 @@ if(isset($_POST['cadastrar'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../CSS/estiloFormulario.css">
+    <link rel="stylesheet" type="text/css" href="../../css/stylesFormulario.css">
     <title>Adicionar Fornecedor</title>
 </head>
 <body>

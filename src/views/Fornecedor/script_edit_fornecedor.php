@@ -1,6 +1,6 @@
 <?php
-include('../BancoDeDados/protect.php');
-include('../BancoDeDados/conexao.php');
+include('../../includes/protect.php');
+include('../../config/conexao.php');
 
 if(isset($_POST['atualizar'])){
     $id = $_POST['id'];

@@ -1,8 +1,4 @@
 <?php
-
-header("Location: Login/login.html");
-
-  
-
+header("Location: views/auth/login.html");
 
 ?>
