@@ -32,7 +32,6 @@ if(!empty($_GET['search'])){
       <nav>
         <div class="linkMenu">  <img src="../../Imagens/Compras.png"> <a class="linkMenu" href="../Compras/Compras.php"> Compras</a> </div> 
         <div class="linkMenu">  <img src="../../Imagens/Pedidos.png"> <a class="linkMenu" href="../Vendas/vendas.php"> Vendas</a> </div> 
-        <div class="linkMenu">  <img src="../../Imagens/Relatorios.png"> <a class="linkMenu" href="../Relatorios/relatorios.php"> Relatorios</a> </div>
         <div class="linkMenu">  <img src="../../Imagens/Fornecedor.png"> <a class="linkMenu" href="../Fornecedor/fornecedor.php"> Fornecedor</a> </div>
         <div class="linkMenu">  <img src="../../Imagens/Produtos.png"><a class="linkMenu" href="../Produtos/produto.php">  Produtos</a> </div>
         <div class="linkMenu">  <img src="../../Imagens/Sair.png"> <a class="linkMenu" href="../auth/logout.php"> Sair</a> </div>
@@ -103,7 +102,7 @@ if(!empty($_GET['search'])){
               echo "<td>R$".$dados['valor']."</td>";
               echo "<td>R$".$dados['valorFinal']."</td>";
               echo "<td>".$dados['data']."</td>";
-              echo "<td><a ><img src='../../Imagens/Vector.png' width='25' height='25'</a></td>";
+              echo "<td><a href='edit_compras.php?id=$dados[idCompras]&idProduto=$dados[idProduto]&idFornecedor=$dados[idFornecedor]'><img src='../../Imagens/Vector.png' width='25' height='25'</a></td>";
               echo "<td> <a '><img src='../../Imagens/deletar.png' width='25' height='25'></a></td ";
               echo"</tr>";
         }

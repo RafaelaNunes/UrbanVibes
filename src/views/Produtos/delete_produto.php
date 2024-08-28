@@ -18,7 +18,7 @@ if (!empty($_GET['idProduto'])) {
                 echo "<script>alert('produto apagado com sucesso');</script>";
                 echo "<script>window.location.href = 'produto.php';</script>";
             } else {
-                echo "<script>alert('Erro ao efeutar a exclusão. Tente novamente');</script>";
+                echo "<script>alert('Não é possivel excluir um produto que ja foi usado em compras ou vendas');</script>";
                 echo $conexao->error;
                 echo "<script>window.location.href = 'produto.php';</script>";
             }

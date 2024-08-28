@@ -18,7 +18,7 @@ if (!empty($_GET['idfornecedor'])) {
                 echo "<script>alert('Fornecedor apagado com sucesso');</script>";
                 echo "<script>window.location.href = 'fornecedor.php';</script>";
             } else {
-                echo "<script>alert('Erro ao efeutar a exclusão. Tente novamente');</script>";
+                echo "<script>alert('Não é possivel excluir um fornecedor usado em vendas');</script>";
                 echo $conexao->error;
                 echo "<script>window.location.href = 'fornecedor.php';</script>";
             }

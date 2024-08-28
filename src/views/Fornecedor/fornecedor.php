@@ -32,7 +32,6 @@ if(!empty($_GET['search'])){
       <nav>
         <div class="linkMenu">  <img src="../../Imagens/Compras.png"> <a class="linkMenu" href="../Compras/Compras.php"> Compras</a> </div> 
         <div class="linkMenu">  <img src="../../Imagens/Pedidos.png"> <a class="linkMenu" href="../Vendas/vendas.php"> Vendas</a> </div> 
-        <div class="linkMenu">  <img src="../../Imagens/Relatorios.png"> <a class="linkMenu" href="../Relatorios/relatorios.php"> Relatorios</a> </div>
         <div class="linkMenu">  <img src="../../Imagens/Fornecedor.png"> <a class="linkMenu" href="../Fornecedor/fornecedor.php"> Fornecedor</a> </div>
         <div class="linkMenu">  <img src="../../Imagens/Produtos.png"><a class="linkMenu" href="../Produtos/produto.php">  Produtos</a> </div>
         <div class="linkMenu">  <img src="../../Imagens/Sair.png"> <a class="linkMenu" href="../auth/logout.php"> Sair</a> </div>
