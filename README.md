@@ -22,13 +22,13 @@ Administrador: Gerencia todas as funcionalidades do sistema, incluindo a configu
 
      
 # Tecnologias Utilizadas 
-* Frontend: Html, CSS, JavaScript 
-* Backend: PHP
-* Banco de Dados:
+* Frontend: Html5, CSS 
+* Backend: PHP  8.0.30
+* Banco de Dados:  mysql8.0.30
 
 # Estrutura
 
-/Diagramas/
+```/Diagramas/
 |
 /Padrão Adotados/
 |
@@ -63,6 +63,22 @@ Administrador: Gerencia todas as funcionalidades do sistema, incluindo a configu
 │   │   ├── edit_produto.php
 |   |   |── sript_edit_produto.php
 │   │   └── delete_produto.php
+|   |
+|   ├── /compras/
+│   │   ├── list_compras.php
+│   │   ├── add_compras.php
+│   │   ├── edit_compras.php
+|   |   |── sript_compras.php
+│   │   └── delete_compras.php
+|   |
+|   ├── /vendas/
+│   │   ├── list_vendas.php
+│   │   ├── add_vendas.php
+│   │   ├── edit_vendas.php
+|   |   |── sript_vendas.php
+│   │   └── delete_vendas.php 
+|   |
+|   |
 │   │
 │   └── /auth/
 │       ├── logar.php
@@ -72,4 +88,4 @@ Administrador: Gerencia todas as funcionalidades do sistema, incluindo a configu
 
 │
 └── /config/
-    └── config.php
+    └── config.php```
