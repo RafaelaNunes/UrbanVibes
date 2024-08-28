@@ -8,17 +8,34 @@ if(isset($_POST['cadastrar'])){
     $cidade = $_POST['cidade'];
     $telefone = $_POST['telefone'];
 
-    $sql = "INSERT INTO `fornecedor` (`nome`, `cidade`, `telefone`) VALUES ('$nome','$cidade','$telefone')";
-    $result = mysqli_query($conexao, $sql);
-    if($result){
-    echo "<script> alert('Cadastro concluido com sucesso');</script>";
-    echo "<script>window.location.href = 'fornecedor.php';</script>";
+    $sqlVerificacao = "SELECT * FROM fornecedor";
+    $resultVerificacao = mysqli_query($conexao,  $sqlVerificacao);
+    $exite = false;
+    
+    while ($fornecedor = mysqli_fetch_assoc($resultVerificacao)) {
+        if($fornecedor["nome"] == $nome){
+            $exite = true;
+        }
+    }
+
+    if(!$exite){
+        $sql = "INSERT INTO `fornecedor` (`nome`, `cidade`, `telefone`) VALUES ('$nome','$cidade','$telefone')";
+        $result = mysqli_query($conexao, $sql);
+      
+        if($result){
+        echo "<script> alert('Cadastro concluido com sucesso');</script>";
+        echo "<script>window.location.href = 'fornecedor.php';</script>";
+        }else{
+        echo "<script> alert('Erro ao efeutar o cadastro. Tente novamente');</script>";
+    //  echo $conexao->error;
+        echo "<script>window.location.href = 'formulario_add_fornecedor.php';</script>";
+        }
     }else{
-    echo "<script> alert('Erro ao efeutar o cadastro. Tente novamente');</script>";
-  //  echo $conexao->error;
-    echo "<script>window.location.href = 'formulario_add_fornecedor.php';</script>";
+        echo "<script> alert('Não foi possivel concluir o cadastro pois ja existe um fornecedor com esse nome');</script>";
+        echo "<script>window.location.href = 'fornecedor.php';</script>";
     }
 }
+
 
 ?>
 
@@ -66,3 +83,5 @@ if(isset($_POST['cadastrar'])){
 
 </body>
 </html>
+
+
