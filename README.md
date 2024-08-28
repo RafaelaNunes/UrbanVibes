@@ -28,7 +28,7 @@ Administrador: Gerencia todas as funcionalidades do sistema, incluindo a configu
 
 # Estrutura
 
-/Diagramas/
+```/Diagramas/
 |
 /Padrão Adotados/
 |
@@ -72,4 +72,4 @@ Administrador: Gerencia todas as funcionalidades do sistema, incluindo a configu
 
 │
 └── /config/
-    └── config.php
+    └── config.php```
