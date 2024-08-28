@@ -22,9 +22,9 @@ Administrador: Gerencia todas as funcionalidades do sistema, incluindo a configu
 
      
 # Tecnologias Utilizadas 
-* Frontend: Html, CSS, JavaScript 
-* Backend: PHP
-* Banco de Dados:
+* Frontend: Html5, CSS 
+* Backend: PHP  8.0.30
+* Banco de Dados:  mysql8.0.30
 
 # Estrutura
 
