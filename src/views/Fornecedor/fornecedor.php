@@ -47,7 +47,7 @@ if(!empty($_GET['search'])){
   
   <div class="conteudo">
 
-  <h2 class="tituloPaginas"> Forncedor</h2>
+  <h2 class="tituloPaginas"> Fornecedor</h2>
 
 <div class="container-pesquisa">
     <input type="search" placeholder="Digite sua pesquisa..." id="pesquisar">
