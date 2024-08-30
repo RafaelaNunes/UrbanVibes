@@ -20,6 +20,8 @@ O sistema de gerenciamento de loja de roupas é uma solução  projetada para ot
 # Tipos de Usuários Previstos
 Administrador: Gerencia todas as funcionalidades do sistema, incluindo a configuração de permissões e o gerenciamento de produtos e usuários.
 
+# Link kamban e backlog
+https://github.com/users/joaobat119/projects/1/views/1
      
 # Tecnologias Utilizadas 
 * Frontend: Html5, CSS 
