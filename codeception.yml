@@ -1,0 +1,37 @@
+namespace: Tests
+support_namespace: Support
+# suite config
+suites:
+  acceptance:
+    actor: AcceptanceTester
+    path: .
+    modules:
+      enabled:
+        - PhpBrowser:
+            url: http://localhost/UrbanVibes/src/views/auth
+
+    # add Codeception\Step\Retry trait to AcceptanceTester to enable retries
+    step_decorators:
+      - Codeception\Step\ConditionalAssertion
+      - Codeception\Step\TryTo
+      - Codeception\Step\Retry
+
+extensions:
+  enabled: [Codeception\Extension\RunFailed]
+
+params:
+  - env
+
+gherkin: []
+
+# additional paths
+paths:
+  tests: tests
+  output: tests/_output
+  data: tests/Support/Data
+  support: tests/Support
+  envs: tests/_envs
+
+settings:
+  shuffle: false
+  lint: true

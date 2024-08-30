@@ -2,8 +2,8 @@
 include('../../config/conexao.php');
 session_start();
 
-if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])){
-    
+if (isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])) {
+
 
     $email = $_POST['email'];
     $senha = $_POST['senha'];
@@ -12,13 +12,14 @@ if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) &
     $sql = $conexao->query($sql) or die("Falha na execução do codigo" . $conexao->error);
     $quantidade = $sql->num_rows;
 
-    if($quantidade == 1){
+    if ($quantidade == 1) {
         $usuario = $sql->fetch_assoc();
-        $_SESSION['idusuario']= $usuario['idusuario'];
+        $_SESSION['idusuario'] = $usuario['idusuario'];
 
         header("Location: ../Fornecedor/fornecedor.php");
 
-    }else{
+    } else {
+        echo '<div id="error-message">Falha ao logar! Email ou senha incorretos</div>';
         echo "<script> alert('Falha ao logar! Email ou senha incorretos');</script>";
         echo "<script>window.location.href = 'login.html';</script>";
     }
@@ -27,10 +28,10 @@ if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) &
 
 
 
-}else{
+} else {
     echo "<script> alert('Preencha os campos de login e senha');</script>";
     echo "<script>window.location.href = 'login.html';</script>";
-    
+
 }
 
 
