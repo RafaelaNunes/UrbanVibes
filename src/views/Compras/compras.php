@@ -103,7 +103,7 @@ if(!empty($_GET['search'])){
               echo "<td>R$".$dados['valorFinal']."</td>";
               echo "<td>".$dados['data']."</td>";
               echo "<td><a href='edit_compras.php?id=$dados[idCompras]&idProduto=$dados[idProduto]&idFornecedor=$dados[idFornecedor]'><img src='../../Imagens/Vector.png' width='25' height='25'</a></td>";
-              echo "<td> <a '><img src='../../Imagens/deletar.png' width='25' height='25'></a></td ";
+              echo "<td> <a href='delete_compras.php?id=$dados[idCompras]&idProduto=$dados[idProduto]&idFornecedor=$dados[idFornecedor]'><img src='../../Imagens/deletar.png' width='25' height='25'></a></td ";
               echo"</tr>";
         }
               

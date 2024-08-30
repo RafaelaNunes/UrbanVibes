@@ -1,7 +1,7 @@
 <?php
 include('../../includes/protect.php');
 include('../../config/conexao.php');
-echo"okscosmc";
+
 
 if(isset($_POST['atualizar'])){
     echo $_POST['IdProduto'];

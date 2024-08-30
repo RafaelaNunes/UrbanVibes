@@ -27,7 +27,7 @@ if (!empty($_GET['id'])) {
             $resultDelete = mysqli_query($conexao, $sqlDelete);
 
             $sqlUpdate =" UPDATE `produto` SET `quantidade` = '$qtdNova' WHERE `produto`.`idProduto` = '$idProduto'";
-            
+            $result3 = mysqli_query($conexao, $sqlUpdate);
             if ($resultDelete) {
                 echo "<script>alert('Venda apagado com sucesso');</script>";
                 echo "<script>window.location.href = 'vendas.php';</script>";
